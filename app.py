@@ -1,12 +1,17 @@
-from flask import Flask
-
-app = Flask(__name__)
-
-
-@app.route("/")
-def home():
-    return "Welcome to Student Management System!"
+def calculate_total(marks):
+    return sum(marks)
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+def calculate_grade(total):
+    if total >= 90:
+        return "A"
+    elif total >= 75:
+        return "B"
+    elif total >= 50:
+        return "C"
+    else:
+        return "F"
+
+
+def check_result(total):
+    return "PASS" if total >= 50 else "FAIL"
