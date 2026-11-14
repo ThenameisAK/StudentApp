@@ -1,6 +1,4 @@
-from app import calculate_total
-from app import calculate_grade
-from app import check_result
+from app import calculate_grade, calculate_total, check_result
 
 
 # Test 1: Calculate total marks
