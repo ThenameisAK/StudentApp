@@ -15,3 +15,9 @@ def calculate_grade(total):
 
 def check_result(total):
     return "PASS" if total >= 50 else "FAIL"
+
+
+def calculate_average(marks):
+    total = sum(marks)
+    average = total / len(marks)
+    return average
